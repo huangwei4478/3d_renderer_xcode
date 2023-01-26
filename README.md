@@ -32,3 +32,8 @@ Development environment: using [Xcode](https://developer.apple.com/xcode/).
 - you have to **clean** after every build, see ["Weird Problem with XCode, SDL2, and Catalina"](https://discourse.libsdl.org/t/weird-problem-with-xcode-sdl2-and-catalina/27411/1)
 
 - Press **cmd+option+k** to clean the project, after every cmd+r
+
+### How to set working directory, so program can access the assets folder to fetch images or 3D obj files? 
+
+![Working Directory for Xcode](./20081674725329.jpg)
+![Code Example of fetching assets](./WX20230126-173045%402x.png)

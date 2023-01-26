@@ -22,7 +22,8 @@ void setup(void) {
 		SDL_TEXTUREACCESS_STREAMING,
 		SCREEN_WIDTH,
 		SCREEN_HEIGHT);
-    load_cube_mesh_data();
+//    load_cube_mesh_data();
+    load_obj_file_data("./assets/f22.obj");
 }
 
 void process_input(void) {
@@ -77,12 +78,12 @@ void update(void) {
 	// Loop all triangle faces of our mesh
     int num_faces = array_length(mesh.faces);
 	for (int i = 0; i < num_faces; i++) {
-		face_t mesh_face = cube_faces[i];
+		face_t face = mesh.faces[i];
 
 		vec3_t face_vertices[3];
-		face_vertices[0] = cube_vertices[mesh_face.a - 1];
-		face_vertices[1] = cube_vertices[mesh_face.b - 1];
-		face_vertices[2] = cube_vertices[mesh_face.c - 1];
+		face_vertices[0] = mesh.vertices[face.a - 1];
+		face_vertices[1] = mesh.vertices[face.b - 1];
+		face_vertices[2] = mesh.vertices[face.c - 1];
 
 		triangle_t projected_triangle;
 
