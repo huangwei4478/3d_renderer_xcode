@@ -8,15 +8,15 @@
 #include "array.h"
 
 // Array of triangles that should be rendered frame by frame
-triangle_t* triangles_to_render = NULL;
-vec3_t camera_position = { .x = 0, .y = 0, .z = 0 };
+static triangle_t* triangles_to_render = NULL;
+static vec3_t camera_position = { .x = 0, .y = 0, .z = 0 };
 
-float fov_factor = 640;
+static float fov_factor = 640;
 
-Uint32 previous_frame_time = 0;
+static Uint32 previous_frame_time = 0;
 
-enum render_method render_method;
-enum cull_method cull_method;
+static enum render_method render_method;
+static enum cull_method cull_method;
 
 void setup(void) {
   
