@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 // Screen dimension constants
-int SCREEN_WIDTH = 640;
-int SCREEN_HEIGHT = 480;
+int SCREEN_WIDTH = 1280;
+int SCREEN_HEIGHT = 800;
 
 bool is_running = false;
 SDL_Window* window = NULL;

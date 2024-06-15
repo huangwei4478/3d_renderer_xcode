@@ -56,6 +56,8 @@
 		0E58C31129803A2C00955A6A /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
 		0E58C31C2982769800955A6A /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.obj; sourceTree = "<group>"; };
 		0E58C31D2982769800955A6A /* f22.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = f22.obj; sourceTree = "<group>"; };
+		0E58C31E2982CF4D00955A6A /* Room.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Room.obj; sourceTree = "<group>"; };
+		0E58C31F2982CF4D00955A6A /* iPhoneX.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iPhoneX.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,8 @@
 		0E58C31B2982768A00955A6A /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				0E58C31F2982CF4D00955A6A /* iPhoneX.obj */,
+				0E58C31E2982CF4D00955A6A /* Room.obj */,
 				0E58C31C2982769800955A6A /* cube.obj */,
 				0E58C31D2982769800955A6A /* f22.obj */,
 			);
