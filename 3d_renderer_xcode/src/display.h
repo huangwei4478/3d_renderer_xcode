@@ -11,6 +11,18 @@ extern int SCREEN_HEIGHT;
 #define FPS (30.0)
 #define FRAME_TARGET_TIME (1000.0 / FPS)
 
+enum cull_method {
+  CULL_NONE,
+  CULL_BACKFACE
+};
+
+enum render_method {
+  RENDER_WIRE,
+  RENDER_WIRE_VERTEX,
+  RENDER_FILL_TRIANGLE,
+  RENDER_FILL_TRIANGLE_WIRE
+};
+
 extern bool is_running;
 extern SDL_Window* window;
 extern SDL_Renderer* renderer;
